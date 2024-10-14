@@ -166,5 +166,3 @@ Files `tracking_week_[week].csv` contains player tracking data from week `[week]
 - `o`: Player orientation (deg), 0 - 360 degrees (numeric)
 - `dir`: Angle of player motion (deg), 0 - 360 degrees (numeric)
 - `event`: Tagged play details, including moment of ball snap, pass release, pass catch, tackle, etc (text)
-
-![img.png](img.png)
