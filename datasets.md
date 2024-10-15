@@ -25,8 +25,8 @@ The 2025 Big Data Bowl allows participants to use supplemental NFL data as long 
 - `visitorFinalScore`: The total amount of points scored by the visiting team in the game (numeric)
 
 ### Play data
-- `gameId`: Game identifier, unique (numeric)
-- `playId`: Play identifier, not unique across games (numeric)
+- **`gameId`**: Game identifier, unique (numeric)
+- **`playId`**: Play identifier, not unique across games (numeric)
 - `playDescription`: Description of play (text)
 - `quarter`: Game quarter (numeric)
 - `down`: Down (numeric)
@@ -77,9 +77,9 @@ The 2025 Big Data Bowl allows participants to use supplemental NFL data as long 
 - `pff_manZone`: Whether the defense employed man or zone coverage on the play (text)
 
 ### Player Play data
-- `gameId`: Game identifier, unique (numeric)
-- `playId`: Play identifier, not unique across games (numeric)
-- `nflId`: Player identification number, unique across players (numeric)
+- **`gameId`**: Game identifier, unique (numeric)
+- **`playId`**: Play identifier, not unique across games (numeric)
+- **`nflId`**: Player identification number, unique across players (numeric)
 - `teamAbbr`: The team abbreviation for the team the player plays for (text)
 - `hadRushAttempt`: Whether or not the player had a rushing attempt on this play (numeric)
 - `rushingYards`: The rush yards accrued by the player on this play (numeric)
@@ -128,7 +128,7 @@ The 2025 Big Data Bowl allows participants to use supplemental NFL data as long 
 - `pff_secondaryDefensiveCoverageMatchupNflId`: The NFL player ID of the opponent tagged as the secondary matchup in coverage for the defender on this play (numeric)
 
 ### Player data
-- `nflId`: Player identification number, unique across players (numeric)
+- **`nflId`**: Player identification number, unique across players (numeric)
 - `height`: Player height (text)
 - `weight`: Player weight (numeric)
 - `birthDate`: Date of birth (YYYY-MM-DD)
@@ -137,9 +137,9 @@ The 2025 Big Data Bowl allows participants to use supplemental NFL data as long 
 - `displayName`: Player name (text)
 
 ### Tackles data
-- `gameId`: Game identifier, unique (numeric)
-- `playId`: Play identifier, not unique across games (numeric)
-- `nflId`: Player identification number, unique across players (numeric)
+- **`gameId`**: Game identifier, unique (numeric)
+- **`playId`**: Play identifier, not unique across games (numeric)
+- **`nflId`**: Player identification number, unique across players (numeric)
 - `tackle`: Indicator for whether the given player made a tackle on the play (binary)
 - `assist`: Indicator for whether the given player made an assist tackle on the play (binary)
 - `forcedFumble`: Indicator for whether the given player forced a fumble on the play (binary)
@@ -148,9 +148,9 @@ The 2025 Big Data Bowl allows participants to use supplemental NFL data as long 
 ### Tracking data
 Files `tracking_week_[week].csv` contains player tracking data from week `[week]`.
 
-- `gameId`: Game identifier, unique (numeric)
-- `playId`: Play identifier, not unique across games (numeric)
-- `nflId`: Player identification number, unique across players. When value is NA, row corresponds to ball. (numeric)
+- **`gameId`**: Game identifier, unique (numeric)
+- **`playId`**: Play identifier, not unique across games (numeric)
+- **`nflId`**: Player identification number, unique across players. When value is NA, row corresponds to ball. (numeric)
 - `frameType`: Whether frame was before, during or after snap. (text)
 - `displayName`: Player name (text)
 - `frameId`: Frame identifier for each play, starting at 1 (numeric)
